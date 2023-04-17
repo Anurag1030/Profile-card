@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rancho', cursive;
+    
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+.pr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+.pr::before{
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     border-radius: 24px 24px 0 0;
+     height: 36%;
+     width: 100%;
+     background-color: rgb(72, 0, 240);
+}
+.img{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(72, 0, 240);
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.img .pp{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.pr .td{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+.td .name{
+    font-size: 30px;
+    font-weight: 700;
+}
+.td .job{
+    font-size: 20px;
+    font-weight: 350;
+}
+.pr .mb{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.mb .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: cornflowerblue;
+    text-decoration: none;
+}
+.pr .btn{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.btn .btn1{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding:  8px 24px;
+    background-color: rgb(72, 0, 240);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn .btn1:hover{
+    background-color: rgb(106, 49, 238);
+}
+.pr .ana{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.ana .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 1px solid #e7e7e7;
+}
+.data:last-child{
+    border-right: none;
+    margin-right: 5px;
+}
+.data i{
+    font-size: 18px;
+}
